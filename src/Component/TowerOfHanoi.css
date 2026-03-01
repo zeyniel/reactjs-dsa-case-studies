@@ -1,0 +1,235 @@
+.container7{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 70px;
+}
+.title7{
+  font-family: 'Euclid Bold';
+  color:white;
+  font-size: 37px;
+  margin-bottom: -10px;
+}
+.line7 {
+  width: 450px;
+  height: 0.08px;
+  background-color: white;
+  margin: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.buttonrow3 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+/* Build Tree Button */
+.build-tree-button3 {
+  font-family: 'Euclid Medium';
+  width: 150px;
+  padding: 12px 20px;
+  font-size: 14px;
+  background-color: #2a3861;  /* Build Tree Button Color */
+  border: 2px solid #7e8fc3;  /* Border Color */
+  border-radius: 25px;  /* Rounded Corners */
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reset-tree-button3 {
+  font-family: 'Euclid Medium';
+  width: 150px;
+  padding: 12px 20px;
+  font-size: 14px;
+  background-color: #0d152d;  /* Reset Tree Button Color */
+  border: 2px solid #7e8fc3;  /* Border Color */
+  border-radius: 25px;  /* Rounded Corners */
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.build-tree-button3:hover,
+.reset-tree-button3:hover {
+  background-color: #7e8fc3;
+  border: 2px solid black;
+}
+.moves{
+  font-family: 'Euclid Medium';
+  color: white;
+  font-size: 23px;
+}
+.moves-list{
+  font-family: 'Euclid Regular';
+  color: white;
+  font-size: 15px;
+}
+.records{
+  margin-left: 25px
+}
+.tower-label{
+  font-family: 'Euclid Regular';
+  color: white;
+  font-size: 15px;
+}
+.movehere{
+    font-family: 'Euclid Medium';
+    font-size: 11px;
+    background-color: #2a3861;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    height:30px;
+    width: 80px;
+    margin-top: 15px
+}
+
+  .towers {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-end;
+    width: 100%;
+    gap: 40px; /* Adjust spacing between towers */
+  }
+  
+  
+  .tower {
+    position: relative;
+    width: 100px;
+    height: 200px;
+  }
+  
+  .tower-base {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background-color: #1cf46f; /* Orange base color */
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .tower-wood {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    width: 10px;
+    height: 180px;
+    background-color: #7e8fc3;
+    transform: translateX(-50%);
+  }
+  .tower-base {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background-color: #fbbc05;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .tower-wood {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    width: 10px;
+    height: 180px;
+    background-color: #7e8fc3;
+    transform: translateX(-50%);
+  }
+  
+  .disk {
+    position: absolute;
+    height: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+  }
+  
+  .disk-1 {
+    background-color: #00ffc3;
+  }
+  
+  .disk-2 {
+    background-color: #00deaa;
+  }
+  
+  .disk-3 {
+    background-color: #00a780;
+  }
+  
+  .disk-4 {
+    background-color: #008364;
+  }
+  
+  .disk-5 {
+    background-color: #006b54;
+  }
+  .move-records {
+    width: 25%;
+    text-align: left;
+    padding-left: 10px;
+    border-left: 2px solid #ccc;
+  }
+  
+  .selected {
+    border: 2px solid green;
+  }
+  
+  .win-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards; /* Fade-in animation */
+  }
+  
+  .win-overlay.fade-out {
+    animation: fadeOut 0.5s forwards; /* Fade-out animation */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  .win-message {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .win-message h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .win-message p {
+    font-size: 1.2rem;
+  }

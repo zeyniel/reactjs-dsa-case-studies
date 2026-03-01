@@ -1,0 +1,132 @@
+.container3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 30px;
+    margin-top: 10px;
+}
+.sidebar3{
+    width: 400px;
+    text-align: left;
+    padding: 20px;
+    margin-right: 50px;
+}
+.title3 {
+    font-family: 'Euclid Bold';
+    color:white;
+    font-size: 43px;
+    line-height: 0.8;
+    text-align: center;
+}
+.subtitle3 {
+    font-family: 'Euclid Medium';
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    line-height: 0.8;
+}
+.line3 {
+    width: 100%;
+    height: 0.08px;
+    background-color: white;
+    margin-top: 7%;
+}
+.logsinput3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+    margin: 20px 0;
+}
+.viewlogs3 {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: #09fcc5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #0d152d;
+    transition: background-color 0.3s;
+}
+.viewlogs3:hover {
+    background-color: #1dc59e;
+}
+
+.plate-input3 {
+    height: 35px;
+    width: 280px;
+    padding: 10px;
+    border-radius: 28px;
+    font-size: 15px;
+    margin: 15px;
+}
+  
+.infos3{
+    font-family: 'Euclid Regular';
+    font-size: 19px;
+    margin: 40px 0;
+    color: white;
+    line-height: 0.6;
+}
+
+.depart3, .arrive3 {
+    font-family: 'Euclid Medium';
+    width: 150px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background: #7e8fc3;
+    color: white;
+    font-size: 16px;
+    margin: 20px;
+    transition: background-color 0.3s;
+}
+.depart3:hover, .arrive3:hover{
+    background: #4b5d8a;
+}
+  
+.garage3{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Euclid Regular';
+    font-size: 14px;
+    overflow-y: auto;
+    background-color: #2a3861;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.parking-space3 {
+    text-align: center;
+    justify-content: center;
+    padding: 6px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    width: 220px;
+    background-color: #4b5d8a;
+}
+.occupied3{
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+
+}
+.empty3{
+    color: #4b5d8a;
+    border: 2px solid #0d152d;
+}
+

@@ -1,0 +1,154 @@
+.container6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin:50px;
+  }
+.title6{
+    font-family: 'Euclid Bold';
+    color:white;
+    font-size: 37px;
+    margin-bottom: -10px;
+}
+.line6 {
+    width: 450px;
+    height: 0.08px;
+    background-color: white;
+    margin: 20px;
+    margin-top: 30px;
+}
+.level {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+  
+
+  
+.node.active {
+    opacity: 1; /* Highlight active node */
+    transform: scale(1.2); /* Slightly enlarge active node */
+  }
+  
+  /* Branch connections */
+.tree .level .node::before,
+.tree .level .node::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    background-color: #000;
+    z-index: -1;
+  }
+  
+  /* Left branch */
+.tree .level .node::before {
+    left: 50%;
+    bottom: 0; /* Start from the bottom of the parent node */
+    transform: translateX(-50%) rotate(-45deg);
+    transform-origin: bottom center; /* Anchor at the bottom center */
+    height: 50px; /* Adjust height for branch length */
+  }
+  
+  /* Right branch */
+.tree .level .node::after {
+    right: 50%;
+    bottom: 0; /* Start from the bottom of the parent node */
+    transform: translateX(50%) rotate(45deg);
+    transform-origin: bottom center; /* Anchor at the bottom center */
+    height: 50px; /* Adjust height for branch length */
+  }
+  
+  /* Hide branches for nodes without children */
+.tree .level:last-child .node::before,
+.tree .level:last-child .node::after {
+    display: none;
+  }
+  
+  /* Specific node colors for better visibility */
+.node.level-1 { background-color: #e74c3c; }
+.node.level-2 { background-color: #2ecc71; }
+.node.level-3 { background-color: #9b59b6; }
+.node.level-4 { background-color: #f1c40f; }
+.node.level-5 { background-color: #8e44ad; }
+  
+  /* Input and buttons layout */
+.controls {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+.buttons-row2 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.buttons-row2 button:hover {
+    background-color: #0d152d;  
+  }
+.reset-tree-button2 {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #0d152d;  /* Reset Tree Button Color */
+    border: 2px solid #7e8fc3;  /* Border Color */
+    border-radius: 25px;  /* Rounded Corners */
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+.buttons-row2 button{
+    font-family: 'Euclid Medium';
+    font-size: 16px;
+    background-color: #2a3861;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 38px;
+    width: 38px;
+}
+button:disabled {
+    background-color: #3a4d7a;
+    cursor: not-allowed;
+}
+.traversal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Increased space between the buttons */
+    margin-top: -10px; /* Optional: Adjust space above the buttons */
+}
+.traversal-buttons button{
+    font-family: 'Euclid Medium';
+    padding: 10px 18px;
+    height: 40px;
+    width: 130px;
+    font-size: 13px;
+    background-color: #7e8fc3;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.traversal-buttons button:hover {
+    background-color: #0d152d;  
+}
+.traversal-result2{
+    color: white;
+    font-family: 'Euclid Light';
+    margin: -5px;
+}
+.traversal-result2 p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #fbbc05;
+  }

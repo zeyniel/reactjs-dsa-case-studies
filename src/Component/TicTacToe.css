@@ -1,0 +1,80 @@
+.container1{
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+    padding: 30px;
+}
+.sidebar1{
+    width: 400px;
+    text-align: left;
+    margin: auto;
+}
+.title1{
+    font-family: 'Euclid Bold';
+    color:white;
+    font-size: 45px;
+    line-height: 1;
+}
+.scoreboard{
+    font-family: 'Euclid Regular';
+    margin: 25px 0;
+    font-size: 18px;
+    color: white;
+    line-height: 0.6;
+}
+.reset{
+    font-family: 'Euclid Medium';
+    width: 155px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background: #7e8fc3;
+    color: white;
+    font-size: 15px;
+    margin: 20px 0;
+}
+.reset:hover{
+    background: #4b5d8a;
+}
+
+.cell{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 120px;
+    background: #2a3861;
+    border: 4px solid #0d152d;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.cell:hover {
+    background-color: #273358;
+}
+.board{
+    display: grid;
+    height: 400px;
+    width: 390px;
+    display: flex;
+    margin: auto;
+
+}
+.cell img{
+    max-width: 48px;
+    max-height: 48px;
+    object-fit: contain;
+}
+.player{
+    font-family: 'Euclid Medium';
+    color:#fbbc05;
+    font-size: 20px;
+    margin-bottom: 13%;
+    margin-top: 10%;
+}
+.line {
+    width: 80%;
+    height: 0.08px;
+    background-color: white;
+    margin-top: 7%;
+}

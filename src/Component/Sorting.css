@@ -1,0 +1,298 @@
+.container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 610px;
+    padding: 30px;
+    margin-top: 50px;
+}
+.top2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.title{
+    font-family: 'Euclid Bold';
+    color:white;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.vline {
+    border-left: 1px solid #ccc;
+    height: 90%;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 20px;
+    
+}
+.enter{
+    font-family: 'Euclid Medium';
+    font-size: 15px;
+    color: white;
+}
+.inputsection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inputbox{
+    width: 300px;
+    height: 100px;
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    vertical-align: top;
+    overflow: hidden;
+    line-height: 1.2;
+}
+.buttons2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.checkbtn, .crossbtn, .shufflebtn {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.checkbtn {
+    margin: 5px;
+    background-color: #09fcc5;
+}
+.crossbtn {
+    margin: 5px;
+    background-color: #8d3851;
+}
+.shufflebtn {
+    margin-top: 5px;
+    background-color: #fbbc05;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn {
+    font-family: 'Euclid Medium';
+    width: 170px;
+    height: 40px;
+    background-color: #7e8fc3;
+    color: white;
+    padding: 10px 15px;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.dropbtn:hover {
+    background-color: #4b5d8a;
+}
+.dropdown-content{
+    font-family: 'Euclid Regular';
+    display: none;
+    position: absolute;
+    background-color: #a0aac9;
+    min-width: 170px;
+    box-shadow: 0px 8px 16px rgba (0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #0d152d;
+    color: white;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #6d7db1;
+}
+.bottom2{
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.sortbtn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sortbtn button {
+    font-family: 'Euclid Medium';
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #2a3861;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.sortbtns button:hover {
+    background-color: #4a5a82;
+}
+.output {
+    margin-top: 20px;
+    height: 270px;
+    width: 750px;
+    background-color: #2a2f45;
+    border-radius: 5px;
+    overflow-y: auto;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+
+}
+.bubble {
+    width: 150px;
+    padding: 10px;
+    font-family: 'Euclid Medium';
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #2a3861;
+    color: white;
+}
+.insertion {
+    width: 150px;
+    padding: 10px;
+    font-family: 'Euclid Medium';
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #2a3861;
+    color: white;
+}
+.selection {
+    width: 150px;
+    padding: 10px;
+    font-family: 'Euclid Medium';
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #2a3861;
+    color: white;
+}
+.merge {
+    width: 150px;
+    padding: 10px;
+    font-family: 'Euclid Medium';
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #2a3861;
+    color: white;
+}
+.shell {
+    width: 150px;
+    padding: 10px;
+    font-family: 'Euclid Medium';
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #2a3861;
+    color: white;
+}
+.quick {
+    width: 150px;
+    padding: 10px;
+    font-family: 'Euclid Medium';
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #2a3861;
+    color: white;
+}
+.heap {
+    width: 150px;
+    padding: 10px;
+    font-family: 'Euclid Medium';
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #2a3861;
+    color: white;
+}
+.enter{
+    font-family: 'Euclid Medium';
+    font-size: 15px;
+    color: white;
+}
+.graph {
+    margin-left: 20px;
+    width: 800px;
+    height: 340px;
+    background-color: #2a3861;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Euclid Medium', sans-serif;
+    font-size: 16px;
+    display: flex;
+    gap: 2px;
+}
+.bar-container{
+    width: 100%;;
+}
+.bar {
+    background-color: #6d7db1;
+    width: 100%;
+    height: 100px;
+    transition: height 0.5s, background-color 0.5s;
+}
+.bar.active {
+    background-color: #6d7db1; 
+}
+.speed-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.speed-buttons button {
+    font-family: 'Euclid Regular';
+    margin: 2px;
+    margin-top: 15px;
+    padding: 5px 15px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: #6d7db1;
+    transition: background-color 0.2s;
+
+}
+.slow:hover{
+    background-color: #09fcc5;
+}
+.med:hover{
+    background-color: #fbbc05;
+}
+.fast:hover{
+    background-color: #8d3851
+}
+
+
