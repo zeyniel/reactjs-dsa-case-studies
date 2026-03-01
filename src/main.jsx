@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css';
 import App from './App.jsx';
 import Home from './Component/Home';
@@ -14,6 +14,7 @@ import BTTraversal from './Component/BTTraversal'
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
+        {/* 2. Using HashRouter here ensures the links work on GitHub Pages */}
         <Router>
             <Routes>
                 <Route path="/" element={<App />} />
