@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Euclid Regular', Inter, system-ui, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -13,36 +13,44 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Fonts */
 @font-face {
   font-family: 'Euclid Regular';
   src: url('./Assets/Euclid Circular Fonts/Euclid Circular A Regular.ttf') format('truetype');
 }
-
-
 @font-face {
   font-family: 'Euclid Bold';
   src: url('./Assets/Euclid Circular Fonts/Euclid Circular A Bold.ttf') format('truetype');
 }
 
-@font-face {
-  font-family: 'Euclid Medium';
-  src: url('./Assets/Euclid Circular Fonts/Euclid Circular A Medium.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Euclid Light';
-  src: url('./Assets/Euclid Circular Fonts/Euclid Circular A Light.ttf') format('truetype');
-}
-
+/* Modified Body for Mobile Support */
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center;    /* Center content horizontally */
   min-width: 320px;
   min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;     /* Prevent horizontal scroll bugs */
 }
 
+/* 📱 Responsive Mobile Layer */
+@media (max-width: 768px) {
+  :root {
+    font-size: 14px; /* Slightly smaller text for phones */
+  }
 
+  body {
+    padding: 10px; /* Give content some breathing room from the edges */
+  }
+
+  /* Make sure images/containers don't overflow the screen */
+  img, canvas, .container {
+    max-width: 100%;
+    height: auto;
+  }
+}
 
 @media (prefers-color-scheme: light) {
   :root {
